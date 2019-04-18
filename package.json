@@ -6,7 +6,7 @@
   "author": "justin smith <justin@jws.io>",
   "license": "MIT",
   "scripts": {
-    "build": "mkdir deploy && touch deploy/index.html && node index.js",
+    "build": "mkdir deploy && touch deploy/index.html && node index.js && ls",
     "test": "echo 'ran the tests!'",
     "test-ci": "echo 'ran the tests!'"
   }
