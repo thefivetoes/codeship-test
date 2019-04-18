@@ -1,6 +1,3 @@
-- name: install
-  service: app
-  command: yarn install
 - name: build
   service: app
   command: yarn build
