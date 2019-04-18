@@ -8,4 +8,5 @@
     command: yarn build
   - name: deploy
     service: awsdeployment
-    command: ls deploy && aws s3 cp /deploy/deploy s3://codeship-test-bucket --recursive
+    command: ls deploy
+    # command: ls deploy && aws s3 cp /deploy/deploy s3://codeship-test-bucket --recursive
