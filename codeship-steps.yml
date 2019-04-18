@@ -1,7 +1,7 @@
 - name: build
   service: app
   command: yarn build
-- name: tests
+- name: test
   service: app
   command: yarn test-ci
 - name: deploy
