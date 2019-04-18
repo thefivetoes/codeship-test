@@ -1,11 +1,11 @@
-- name: test
-  service: app
-  command: yarn test-ci
 - type: serial
   steps:
+  - name: test
+    service: app
+    command: yarn test-ci
   - name: build
-    service: awsdeployment
+    service: app
     command: yarn build
   - name: deploy
     service: awsdeployment
-    command: aws s3 cp /deploy/deploy s3://codeship-test-bucket --recursive
+    command: ls deploy && aws s3 cp /deploy/deploy s3://codeship-test-bucket --recursive
