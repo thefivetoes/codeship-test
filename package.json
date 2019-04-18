@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "node index.js",
-    "test": "echo 'ran the tests!'"
+    "test": "echo 'ran the tests!'",
+    "test-ci": "echo 'ran the tests!'"
   }
 }

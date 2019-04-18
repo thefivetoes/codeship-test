@@ -1,0 +1,12 @@
+- name: install
+  service: app
+  command: yarn install
+- name: build
+  service: app
+  command: yarn build
+- name: tests
+  service: app
+  command: yarn test-ci
+- name: deploy
+  service: awsdeployment
+  command: aws s3 cp /deploy/FILE_TO_DEPLOY s3://SOME_BUCKET
