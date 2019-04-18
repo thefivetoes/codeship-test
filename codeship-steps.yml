@@ -6,4 +6,4 @@
   command: yarn test-ci
 - name: deploy
   service: awsdeployment
-  command: aws s3 cp /deploy/* s3://codeship-test-bucket
+  command: aws s3 cp /deploy s3://codeship-test-bucket
