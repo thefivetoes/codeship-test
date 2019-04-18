@@ -3,9 +3,6 @@
   command: yarn test-ci
 - type: serial
   steps:
-  - name: install
-    service: awsdeployment
-    command: yarn install
   - name: build
     service: awsdeployment
     command: yarn build
